@@ -10,8 +10,10 @@ https://github.com/chregu/GoogleAuthenticator.php
 
 Example:
 
-import pytotp
-secret = pytotp.generate_secret()
-code = pytotp.get_code(secret)
-if pytotp.check_code(secret, '123456'):
-    print('success!')
+    import pytotp
+    secret = pytotp.generate_secret()
+    code = pytotp.get_code(secret)
+    
+    if pytotp.check_code(secret, '123456'):
+        print('success!')
+    
